@@ -1,0 +1,26 @@
+defaults:
+  model: mistral-small-latest
+  provider: api
+
+mistral:
+  # API ключ - получите на https://platform.mistral.ai
+  api_key: your_mistral_api_key_here
+  base_url: https://api.mistral.ai/v1
+  timeout: 30
+
+models:
+  api:
+    available:
+      - id: mistral-small
+        name: mistral-small-latest
+        provider: mistral
+        description: Mistral Small - быстрая и недорогая
+      - id: mistral-medium
+        name: mistral-medium-latest
+        provider: mistral
+        description: Mistral Medium - хороший баланс
+      - id: mistral-large
+        name: mistral-large-latest
+        provider: mistral
+        description: Mistral Large - максимальное качество
+    default: mistral-small-latest
